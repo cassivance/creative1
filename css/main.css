@@ -2,16 +2,12 @@ body {
     padding-top: 50px;
     margin-bottom: 50px;
 }
-.main_body {
+.tic-tac-toe {
     padding: 40px 15px;
     text-align: center;
+    border: 1px solid #e5e5e5;
 }
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
+.rules {
+    padding-top: 20px;
+    border: 1px solid #e5e5e5;
 }

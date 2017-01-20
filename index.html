@@ -21,30 +21,24 @@
     </div>
 </nav>
 
-<div class="container">
-    <div class="tic-tac-toe">
-        <h1>Here's where Tic-Tac-Toe will go!</h1>
-
-        <div id="startScreen" class="pad fullHeight">
-            This is the screen where we input player names!<br>
-            <button class="btn btn-default" type="submit" onclick="startGame()">Play Game</button>
-        </div>
-        <div id="gameScreen" hidden class="pad fullHeight">
-            This is the game!<br>
-            <button class="btn btn-default" type="submit" onclick="victory()">Click here for victory</button>
-        </div>
-        <div id="victoryScreen" hidden class="pad fullHeight">
-            This is the victory screen!<br>
-            <button class="btn btn-default" type="submit" onclick="startGame()">Rematch</button><br>
-            <button class="btn btn-default" type="submit" onclick="goToHome()">New Game</button>
-        </div>
+<div class="container tic-tac-toe">
+    <div id="startScreen" class="pad fullHeight">
+        This is the screen where we input player names!<br>
+        <button class="btn btn-default" type="submit" onclick="startGame()">Play Game</button>
+    </div>
+    <div id="gameScreen" hidden class="pad fullHeight">
+        This is the game!<br>
+        <button class="btn btn-default" type="submit" onclick="victory()">Click here for victory</button>
+    </div>
+    <div id="victoryScreen" hidden class="pad fullHeight">
+        This is the victory screen!<br>
+        <button class="btn btn-default" type="submit" onclick="startGame()">Rematch</button><br>
+        <button class="btn btn-default" type="submit" onclick="goToHome()">New Game</button>
     </div>
 </div>
 
-<div class="container">
-    <div class="rules">
-        <p>We'll stick rules down here.</p>
-    </div>
+<div class="container rules">
+    <p>We'll stick rules down here.</p>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
