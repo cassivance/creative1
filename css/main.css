@@ -15,3 +15,18 @@ body {
 .navbar .navbar-collapse {
     text-align: center;
 }
+
+#startPage{
+  margin-top: 15%;
+}
+
+.form-control{
+
+}
+
+
+.form-horizontal{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
