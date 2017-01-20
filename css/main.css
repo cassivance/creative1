@@ -1,0 +1,17 @@
+body {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.main_body {
+    padding: 40px 15px;
+    text-align: center;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
