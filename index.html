@@ -22,36 +22,56 @@
 </nav>
 
 <div class="container tic-tac-toe">
+
     <div id="startScreen" class="pad fullHeight">
-        <form class="form-horizontal">
-          <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Player One</label>
+        <div class="input-group">
+            <label for="player1" class="col-sm-2 control-label">Player One</label>
             <div class="col-sm-10">
-              <input type="name" class="form-control" id="inputEmail3">
+                <input type="text" class="form-control" id="player1">
             </div>
-          </div>
-          <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">Player Two</label>
+        </div>
+        <div class="input-group">
+            <label for="player2" class="col-sm-2 control-label">Player Two</label>
             <div class="col-sm-10">
-              <input type="name" class="form-control" id="inputPassword3">
+                <input type="text" class="form-control" id="player2">
             </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <button onclick="startGame()" id="startButton" autofocus=""type="submit" class="btn btn-default">Start Game</button>
-            </div>
-          </div>
-        </form>
+        </div>
+        <button class="btn btn-default" type="submit" onclick="startGame()">Start Game</button>
     </div>
+
     <div id="gameScreen" hidden class="pad fullHeight">
-        This is the game!<br>
-        <button class="btn btn-default" type="submit" onclick="victory()">Click here for victory</button>
+        <h4><div id="currentplayer"></div>gets to go!</h4><br>
+        <table id="game">
+            <tr style="border-bottom: 3px solid black">
+                <td id="topLeft" onclick="topLeft()" style="border-right: 3px solid black">1</td>
+                <td id="topMid" onclick="topMid()" style="border-right: 3px solid black">2</td>
+                <td id="topRight" onclick="topRight()">3</td>
+            </tr>
+            <tr style="border-bottom: 3px solid black">
+                <td id="midLeft" onclick="midLeft()" style="border-right: 3px solid black">4</td>
+                <td id="midMid" onclick="midMid()" style="border-right: 3px solid black">5</td>
+                <td id="midRight" onclick="midRight()">6</td>
+            </tr>
+            <tr>
+                <td id="botLeft" onclick="botLeft()" style="border-right: 3px solid black">7</td>
+                <td id="botMid" onclick="botMid()" style="border-right: 3px solid black">8</td>
+                <td id="botRight" onclick="botRight()">9</td>
+            </tr>
+        </table>
     </div>
+
     <div id="victoryScreen" hidden class="pad fullHeight">
-        This is the victory screen!<br>
+        <h3><div id="winner"></div> Wins!</h3><br>
         <button class="btn btn-default" type="submit" onclick="startGame()">Rematch</button><br>
         <button class="btn btn-default" type="submit" onclick="goToHome()">New Game</button>
     </div>
+
+    <div id="tieScreen" hidden class="pad fullHeight">
+        <h3>The game was a tie!</h3><br>
+        <button class="btn btn-default" type="submit" onclick="startGame()">Rematch</button><br>
+        <button class="btn btn-default" type="submit" onclick="goToHome()">New Game</button>
+    </div>
+
 </div>
 
 <div class="container rules">

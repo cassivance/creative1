@@ -7,34 +7,13 @@ body {
     text-align: center;
     border: 1px solid #e5e5e5;
 }
-<<<<<<< HEAD
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
-#startPage{
-  margin-top: 15%;
-}
-
-.form-control{
-
-}
-
-
-.form-horizontal{
-  text-align: center;
-  margin: auto;
-  width: 50%;
-}
-=======
 .rules {
     padding-top: 20px;
     border: 1px solid #e5e5e5;
 }
->>>>>>> 33d676c08f8d52a1ff462a4ed02a03f540b052a3
+table {
+    width: 100%;
+}
+td {
+    width: 33.3%;
+}
