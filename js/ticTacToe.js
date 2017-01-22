@@ -145,6 +145,7 @@ function checkIfGameOver() {
     //Diagonals
     else if (game_board[0][0] != "" && game_board[0][0] == game_board[1][1] && game_board[0][0] == game_board[2][2]) victory(game_board[0][0]);
     else if (game_board[0][2] != "" && game_board[0][2] == game_board[1][1] && game_board[0][2] == game_board[2][0]) victory(game_board[0][2]);
+
     //Tie
     else if (game_board[0][0] != "" && game_board[0][1] != "" && game_board[0][2] != "" &&
              game_board[1][0] != "" && game_board[1][1] != "" && game_board[1][2] != "" &&
@@ -152,15 +153,15 @@ function checkIfGameOver() {
 }
 
 function resetBoardAppearance() {
-    document.getElementById("topLeft").innerHTML = "1";
-    document.getElementById("topMid").innerHTML = "2";
-    document.getElementById("topRight").innerHTML = "3";
-    document.getElementById("midLeft").innerHTML = "4";
-    document.getElementById("midMid").innerHTML = "5";
-    document.getElementById("midRight").innerHTML = "6";
-    document.getElementById("botLeft").innerHTML = "7";
-    document.getElementById("botMid").innerHTML = "8";
-    document.getElementById("botRight").innerHTML = "9";
+    document.getElementById("topLeft").innerHTML = "";
+    document.getElementById("topMid").innerHTML = "";
+    document.getElementById("topRight").innerHTML = "";
+    document.getElementById("midLeft").innerHTML = "";
+    document.getElementById("midMid").innerHTML = "";
+    document.getElementById("midRight").innerHTML = "";
+    document.getElementById("botLeft").innerHTML = "";
+    document.getElementById("botMid").innerHTML = "";
+    document.getElementById("botRight").innerHTML = "";
 }
 
 function victory(winner) {
