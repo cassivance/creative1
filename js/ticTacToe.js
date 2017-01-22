@@ -1,16 +1,15 @@
 var player1;
 var player2;
 var current_player;
-var empty_game_board = [
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""]
-];
 var game_board;
 
 function startGame() {
     resetBoardAppearance();
-    game_board = empty_game_board;
+    game_board = [
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""]
+    ];
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("gameScreen").style.display = "block";
     document.getElementById("victoryScreen").style.display = "none";
