@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="description" content="Play Tic-Tac-Toe!">
     <meta name="author" content="Cassi Vance and Gary Crye">
-    <link rel="icon" href="bin/favicon.png">
+    <link rel="icon" href="bin/board.png">
     <title>Play Tic-Tac-Toe!</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bungee" rel="stylesheet">
     <script src="js/ticTacToe.js"></script>
 </head>
 
@@ -17,7 +17,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header navbar-brand">
-            Play Tic-Tac-Toe!
+          <span><img id="icon" src="bin/board.png"></img><span>
+          <span id="navbarWords">Play Tic-Tac-Toe!</span>
         </div>
     </div>
 </nav>
@@ -26,14 +27,14 @@
 
     <div id="startScreen" class="pad fullHeight">
         <div class="input-group">
-            <label for="player1" class="col-sm-2 control-label">Player One</label>
-            <div class="col-sm-10">
+            <label class="col-sm-4 control-label" for="player1">Player One</label>
+            <div class="col-sm-8">
                 <input type="text" class="form-control" id="player1">
             </div>
         </div>
         <div class="input-group">
-            <label for="player2" class="col-sm-2 control-label">Player Two</label>
-            <div class="col-sm-10">
+            <label class="col-sm-4 control-label" for="player2">Player Two</label>
+            <div class="col-sm-8">
                 <input type="text" class="form-control" id="player2">
             </div>
         </div>
@@ -41,7 +42,7 @@
     </div>
 
     <div id="gameScreen" hidden class="pad fullHeight">
-        <h4><div id="currentplayer"></div>gets to go!</h4><br>
+        <h3><span id="currentplayer"></span> gets to go!</h3><br>
         <table id="game">
             <tr style="border-bottom: 3px solid black">
 

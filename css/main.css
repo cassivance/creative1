@@ -1,6 +1,7 @@
 body {
     padding-top: 50px;
     margin-bottom: 50px;
+    font-family: 'Architects Daughter', cursive;
 }
 .tic-tac-toe {
     padding: 40px 15px;
@@ -14,6 +15,7 @@ body {
 table {
     width:45vw;
     height:45vw;
+    margin: auto;
 }
 tr {
     height:15vw;
@@ -24,9 +26,25 @@ td {
 
 p{
   text-align: center;
+  font-size: 1.2em;
+  font-family: 'Architects Daughter', cursive;
+
 }
 .markers{
   font-family: 'Bungee', cursive;
-  font-size: 2em;
+  font-size: 3em;
   color: red;
+}
+
+#game{
+  margin-top: 40px;
+}
+
+#icon{
+  filter: invert();
+  width: 5%;
+}
+
+#navbarWords{
+  color: white;
 }
