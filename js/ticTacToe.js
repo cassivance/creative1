@@ -2,6 +2,9 @@ var player1;
 var player2;
 var current_player;
 var game_board;
+var x_marker;
+var o_marker;
+var current_marker;
 
 function startGame() {
     resetBoardAppearance();
@@ -17,21 +20,31 @@ function startGame() {
 
     player1 = document.getElementById("player1").value || "Player One";
     player2 = document.getElementById("player2").value || "Player Two";
+    x_marker = "X";
+    o_marker="O"
 
     if(Math.random() > 0.5) current_player = player1;
     else current_player = player2;
     document.getElementById("currentplayer").innerHTML = current_player;
-}
+    current_marker = x_marker;
+  }
 
 function topLeft(){
     if (game_board[0][0] == "") {
         game_board[0][0] = current_player;
         checkIfGameOver();
-        document.getElementById("topLeft").innerHTML = current_player;
+        document.getElementById("topLeft").innerHTML = current_marker;
 
         (current_player == player1)
             ? current_player = player2
             : current_player = player1;
+        (current_marker == x_marker)
+            ? current_marker = o_marker
+            : current_marker = x_marker;
+        // (current_marker == x_marker)
+        //     ? document.getElementsByClassName("markers").style.color = "blue"
+        //     : document.getElementsByClassName("markers").style.color = "red";
+
         document.getElementById("currentplayer").innerHTML = current_player;
     }
 }
@@ -39,11 +52,15 @@ function topMid(){
     if (game_board[0][1] == "") {
         game_board[0][1] = current_player;
         checkIfGameOver();
-        document.getElementById("topMid").innerHTML = current_player;
+        document.getElementById("topMid").innerHTML = current_marker;
 
         (current_player == player1)
             ? current_player = player2
             : current_player = player1;
+
+        (current_marker == x_marker)
+            ? current_marker = o_marker
+            : current_marker = x_marker;
         document.getElementById("currentplayer").innerHTML = current_player;
     }
 }
@@ -51,11 +68,15 @@ function topRight(){
     if (game_board[0][2] == "") {
         game_board[0][2] = current_player;
         checkIfGameOver();
-        document.getElementById("topRight").innerHTML = current_player;
+        document.getElementById("topRight").innerHTML = current_marker;
 
         (current_player == player1)
             ? current_player = player2
             : current_player = player1;
+
+        (current_marker == x_marker)
+            ? current_marker = o_marker
+            : current_marker = x_marker;
         document.getElementById("currentplayer").innerHTML = current_player;
     }
 }
@@ -63,11 +84,15 @@ function midLeft(){
     if (game_board[1][0] == "") {
         game_board[1][0] = current_player;
         checkIfGameOver();
-        document.getElementById("midLeft").innerHTML = current_player;
+        document.getElementById("midLeft").innerHTML = current_marker;
 
         (current_player == player1)
             ? current_player = player2
             : current_player = player1;
+
+        (current_marker == x_marker)
+            ? current_marker = o_marker
+            : current_marker = x_marker;
         document.getElementById("currentplayer").innerHTML = current_player;
     }
 }
@@ -75,11 +100,15 @@ function midMid(){
     if (game_board[1][1] == "") {
         game_board[1][1] = current_player;
         checkIfGameOver();
-        document.getElementById("midMid").innerHTML = current_player;
+        document.getElementById("midMid").innerHTML = current_marker;
 
         (current_player == player1)
             ? current_player = player2
             : current_player = player1;
+
+        (current_marker == x_marker)
+            ? current_marker = o_marker
+            : current_marker = x_marker;
         document.getElementById("currentplayer").innerHTML = current_player;
     }
 }
@@ -87,11 +116,14 @@ function midRight(){
     if (game_board[1][2] == "") {
         game_board[1][2] = current_player;
         checkIfGameOver();
-        document.getElementById("midRight").innerHTML = current_player;
+        document.getElementById("midRight").innerHTML = current_marker;
 
         (current_player == player1)
             ? current_player = player2
             : current_player = player1;
+        (current_marker == x_marker)
+            ? current_marker = o_marker
+            : current_marker = x_marker;
         document.getElementById("currentplayer").innerHTML = current_player;
     }
 }
@@ -99,11 +131,14 @@ function botLeft(){
     if (game_board[2][0] == "") {
         game_board[2][0] = current_player;
         checkIfGameOver();
-        document.getElementById("botLeft").innerHTML = current_player;
+        document.getElementById("botLeft").innerHTML = current_marker;
 
         (current_player == player1)
             ? current_player = player2
             : current_player = player1;
+        (current_marker == x_marker)
+            ? current_marker = o_marker
+            : current_marker = x_marker;
         document.getElementById("currentplayer").innerHTML = current_player;
     }
 }
@@ -111,11 +146,15 @@ function botMid(){
     if (game_board[2][1] == "") {
         game_board[2][1] = current_player;
         checkIfGameOver();
-        document.getElementById("botMid").innerHTML = current_player;
+        document.getElementById("botMid").innerHTML = current_marker;
 
         (current_player == player1)
             ? current_player = player2
             : current_player = player1;
+
+        (current_marker == x_marker)
+            ? current_marker = o_marker
+            : current_marker = x_marker;
         document.getElementById("currentplayer").innerHTML = current_player;
     }
 }
@@ -123,11 +162,15 @@ function botRight(){
     if (game_board[2][2] == "") {
         game_board[2][2] = current_player;
         checkIfGameOver();
-        document.getElementById("botRight").innerHTML = current_player;
+        document.getElementById("botRight").innerHTML = current_marker;
 
         (current_player == player1)
             ? current_player = player2
             : current_player = player1;
+
+        (current_marker == x_marker)
+            ? current_marker = o_marker
+            : current_marker = x_marker;
         document.getElementById("currentplayer").innerHTML = current_player;
     }
 }

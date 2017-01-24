@@ -21,3 +21,12 @@ tr {
 td {
     width:15vw;
 }
+
+p{
+  text-align: center;
+}
+.markers{
+  font-family: 'Bungee', cursive;
+  font-size: 2em;
+  color: red;
+}
