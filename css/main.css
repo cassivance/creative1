@@ -27,12 +27,10 @@ td {
 p{
   text-align: center;
   font-size: 1.2em;
-  font-family: 'Architects Daughter', cursive;
-
 }
 .markers{
-  font-family: 'Bungee', cursive;
-  font-size: 3em;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4.5em;
   color: red;
 }
 
@@ -47,4 +45,12 @@ p{
 
 #navbarWords{
   color: white;
+}
+
+.btn{
+  margin-top: 15px;
+}
+
+.input-group{
+  margin-left: 25%;
 }
